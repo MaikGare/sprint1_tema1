@@ -1,6 +1,7 @@
 
 *{
     max-width: 1200px;
+    min-width: 250px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -77,6 +78,18 @@
             flex-direction: column;
         }
         .menu {
+            flex-flow: column;
+        }
+    }
+
+    @media all and (max-width:500px){
+        .section {
+            flex-direction: column;
+        }
+        .menu {
+            flex-flow: column;
+        }
+        .articulos {
             flex-flow: column;
         }
     }
