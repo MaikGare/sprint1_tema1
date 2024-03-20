@@ -72,3 +72,12 @@
             background-color: #304D30;           
         }
 
+    @media all and (max-width:800px){
+        .section {
+            flex-direction: column;
+        }
+        .menu {
+            flex-flow: column;
+        }
+    }
+
