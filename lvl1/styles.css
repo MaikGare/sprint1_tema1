@@ -1,0 +1,96 @@
+
+*{
+    max-width: 1200px;
+    min-width: 250px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+    .header {   
+        background-color: #000;
+        display: flex;
+        flex-flow: column nowrap;   
+    }
+        .menu {
+            background-color:#5F8670 ;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            .logo {
+                background-color: #FF9800;
+                flex: 1 1 auto;
+            }
+            .nav {
+                background-color: #FF9800;
+                flex: 5 1 auto;
+            }
+            .social {
+                background-color: #FF9800;
+                flex: 1 1 auto;
+            }
+        .banner {
+            background-color: #B80000;
+        }
+            h1 {
+                background-color: #820300;
+            }
+    .section {  
+        background-color: #000; 
+        display: flex;   
+    }
+        .articulos {
+            background-color: #11235A;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article {
+                background-color: #596FB7;
+                flex: 1 1 40%;
+            }
+            .low-nav {
+                background-color: #C6CF9B;
+                flex: 1 1 100%;
+            }
+        .aside {
+            background-color: #5F0F40;
+            flex: 1 1 auto;
+        }
+            .publi {
+                background-color: #FB8B24;
+            }
+
+    .footer { 
+        background-color: #000;  
+    }
+        .pie {
+            background-color: #304D30;           
+        }
+
+    @media all and (max-width:800px){
+        .section {
+            flex-direction: column;
+        }
+        .menu {
+            flex-flow: column;
+        }
+    }
+
+    @media all and (max-width:500px){
+        .section {
+            flex-direction: column;
+        }
+        .menu {
+            flex-flow: column;
+        }
+        .articulos {
+            flex-flow: column;
+        }
+    }
+
